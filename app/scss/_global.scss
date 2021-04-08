@@ -1,0 +1,44 @@
+html,
+body {
+	animation: fade 1s linear;
+	font-family: 'Century Gothic';
+	font-weight: 400;
+	font-size: 13px;
+	font-style: normal;
+	color: #1a1a1a;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+	height: 100%;
+	width: 100%;
+}
+@keyframes fade{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
