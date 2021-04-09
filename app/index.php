@@ -14,14 +14,68 @@
         </div>
         <div class="main__rate">
           <div class="main__rate-title">
-            Гибкие тарифы, выбирите ваш вариант:
+            Гибкие тарифы, выберите ваш вариант:
           </div>
-          <a href="./registration.php" class="main__rate-link">
+          <a href="#" class="main__rate-link">
             ООО – Общество с ограниченной ответственностью
           </a>
-          <a href="./registration.php" class="main__rate-link">
+          <a href="#" class="main__rate-link">
             ИП – Индивидуальный предприниматель
           </a>
+        </div>
+      </div>
+    </div>
+    <div class="big-form">
+      <div class="container">
+        <div class="big-form__inner">
+          <div class="big-form-title--p">
+            Оставить заявку
+          </div>
+          <div class="big-form-step--p">
+            Оставте свой номер и за один звонок мы рассчитаем тариф, который подойдёт именно вашему бизнесу
+          </div>
+          <div class="big-form-close" id="big-form-close-m">
+            <div class="big-form-close-line"></div>
+            <div class="big-form-close-line"></div>
+          </div>
+          <div class="title">Профессиональное бухгалтерское обслуживание предпринимателей и малого бизнеса</div>
+          <form action="" class="contacts__form form">
+            <div class="big-form-title">
+              Оставить заявку
+            </div>
+            <div class="big-form-step">
+              Оставте свой номер и за один звонок мы рассчитаем тариф, который подойдёт именно вашему бизнесу
+            </div>
+            <input type="text" id="phone-input" placeholder="Ваш телефон">
+            <div class="num__block">
+              <div class="num__block-item" data-num="1">1</div>
+              <div class="num__block-item" data-num="2">2</div>
+              <div class="num__block-item" data-num="3">3</div>
+              <div class="num__block-item" data-num="4">4</div>
+              <div class="num__block-item" data-num="5">5</div>
+              <div class="num__block-item" data-num="6">6</div>
+              <div class="num__block-item" data-num="7">7</div>
+              <div class="num__block-item" data-num="8">8</div>
+              <div class="num__block-item" data-num="9">9</div>
+              <div class="num__block-item" data-num="+">+</div>
+              <div class="num__block-item" data-num="0">0</div>
+              <div class="num__block-item">
+                <img src="./images/ico-del.svg" alt="">
+              </div>
+            </div>
+            <div class="form-policy">
+              <input type="checkbox" id="policy">
+              <label for="policy">Принимаю условия</label>
+              <a href="./policy.php">политики конфиденциальности</a>
+            </div>
+            <div class="big-form-close" id="big-form-close-desk">
+              <div class="big-form-close-line"></div>
+              <div class="big-form-close-line"></div>
+            </div>
+            <a href="#" class="big-form-btn">
+              Рассчитать
+            </a>
+          </form>
         </div>
       </div>
     </div>
@@ -148,7 +202,7 @@
           HELIOS заменит вам бухгалтера, юриста, кадровика, налогового консультанта и личного ассистента
         </p>
       </div>
-      <video id="myPlayer" preload="auto" src="./videos/Отзыв.mov" class="outsourcing__video bg video" data-setup='{}' poster="./images/poster-1.svg">
+      <video id="myPlayer" preload="auto" src="./videos/review.mov" class="outsourcing__video bg video" data-setup='{}' poster="./images/poster-1.svg">
 
       </video>
       <p class="outsourcing__subtitle">
@@ -271,6 +325,7 @@
     </div>
   </section>
 
+
   <section class="recall">
     <div class="container">
       <div class="title">
@@ -383,7 +438,7 @@
       </div>
       <div class="recommendations__inner">
         <div class="recommendations__item">
-          <video preload="auto" src="./videos/Отзыв.mov" class="recommendations__video bg video" data-setup='{}' poster="./images/poster-1.svg">
+          <video preload="auto" src="./videos/review.mov" class="recommendations__video bg video" data-setup='{}' poster="./images/poster-1.svg">
           </video>
           <div class="recommendations__item-desc">
             <div class="recommendations__item-text">
@@ -410,7 +465,7 @@
           </div>
         </div>
         <div class="recommendations__item">
-          <video preload="auto" src="./videos/Отзыв.mov" class="recommendations__video bg video" data-setup='{}' poster="./images/poster-1.svg">
+          <video preload="auto" src="./videos/review.mov" class="recommendations__video bg video" data-setup='{}' poster="./images/poster-1.svg">
           </video>
           <div class="recommendations__item-desc">
             <div class="recommendations__item-text">
@@ -455,7 +510,7 @@
           <div class="carier__text">
             Наша команда всегда рада новым специалистам, готовым развиваться вместе с нами и становиться еще лучше!
           </div>
-          <a class="services__item-btn" href="#">
+          <a class="services__item-btn" href="./vacancy.php">
             Вакансии
           </a>
         </div>
@@ -467,7 +522,7 @@
     <div class="container">
       <div class="title">Контакты</div>
       <div class="contacts__inner">
-        <form action="" class="contacts__form form">
+        <form action="" class="contacts__form form" id="contacts__form">
           <div class="contacts__form-item form-item">
             <div class="form-item-title">
               Оставить заявку
@@ -580,26 +635,26 @@
             </div>
           </div>
           <div class="address__illustration">
-            <picture class="lazy">
+            <picture>
               <script srcset="./images/webp/address-1.webp" type="image/webp"></script>
               <img class="address__illustration-item" src="./images/address-1.png">
             </picture>
-            <picture class="lazy">
+            <picture>
               <script srcset="./images/webp/address-2.webp" type="image/webp"></script>
               <img class="address__illustration-item" src="./images/address-2.png">
             </picture>
-            <picture class="lazy">
+            <picture>
               <script srcset="./images/webp/address-3.webp" type="image/webp"></script>
               <img class="address__illustration-item" src="./images/address-3.png">
             </picture>
-            <picture class="lazy">
+            <picture>
               <script srcset="./images/webp/address-4.webp" type="image/webp"></script>
               <img class="address__illustration-item" src="./images/address-4.png">
             </picture>
           </div>
         </div>
         <div class="contacts__map">
-          <picture class="lazy">
+          <picture>
             <script srcset="./images/webp/map-bg.webp" type="image/webp"></script>
             <img class="map-bg" src="./images/map-bg.png" type="image/png">
           </picture>
@@ -609,7 +664,6 @@
   </section>
 </wrapper>
 <? require_once "footer.php" ?>
-
 
 <script src=" https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -662,7 +716,7 @@
     $(".recommendations__inner").on('afterChange', function(event, slick, currentSlide) {
       $("#cp").text(currentSlide + 01);
     });
-    $(".contacts__form").slick({
+    $("#contacts__form").slick({
       infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -674,6 +728,26 @@
     loop: true,
     loopCount: 10,
   });
+  if ($('.recall__item-text').height() > parseFloat($('.recall__item-text').css('line-height')) * 12) {
+    $('.recall__item-text').height(parseFloat($('.recall__item-text').css('line-height')) * 12)
+    $('.read-more').css("display", "block");
+  } else {
+    $('.read-more').css("display", "none");
+  }
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault()
+
+      const blockID = anchor.getAttribute('href').substr(1)
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  }
 
   //Код jQuery, установливающий маску для ввода телефона элементу input
   //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
@@ -681,7 +755,6 @@
     //2. Получить элемент, к которому необходимо добавить маску
     $("#phone-input").mask("+7(999) 999-99-99");
   });
-  
 </script>
 
 

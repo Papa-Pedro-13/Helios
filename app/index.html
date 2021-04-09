@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Helios</title>
+  <title>
+    <? echo $title ?>
+  </title>
 
   <link rel="stylesheet" type="text/css" href="./css/slick.css" />
   <link rel="stylesheet" href="css/style.min.css">
@@ -14,7 +16,7 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="http://helios.na4u.ru/index.php">
+        <a class="logo" href="http://helios.na4u.ru/">
           <picture>
             <source srcset="./images/webp/logo.webp" type="image/webp">
             <img src="./images/logo.svg" alt="Гелиос">
@@ -29,9 +31,9 @@
           <a class="header__nav-item-desk" id="services-item-desk" href="#">услуги</a>
           <div class="header__nav-serv-desk">
             <div class="serv-desk-links">
-              <a class="serv-desk-links-item" href="index.php#clients">Клиенты</a>
-              <a class="serv-desk-links-item" href="index.php#callback">Отзывы</a>
-              <a class="serv-desk-links-item" href="index.php#contacts">Контакты</a>
+              <a class="serv-desk-links-item" href="#clients">Клиенты</a>
+              <a class="serv-desk-links-item" href="#callback">Отзывы</a>
+              <a class="serv-desk-links-item" href="#contacts">Контакты</a>
             </div>
             <div class="serv-desk-list">
               <div class="serv-desk-list__inner">
@@ -77,19 +79,19 @@
                   <div class="header__headline">
                     бух. обсл.
                     <br>
-                    <div class="header__info" href="tel:+79031912616">+7 903 191 26 16</div>
+                    <a class="header__info" href="tel:+79031912616">+7 903 191 26 16</a>
                   </div>
                   <div class="header__headline">
                     продукты 1C
                     <br>
-                    <div class="header__info" href="tel:+79639623433">+7 963 962 34 33</div>
+                    <a class="header__info" href="tel:+79639623433">+7 963 962 34 33</a>
                   </div>
                 </div>
                 <div class="header__phones">
                   <div class="header__headline">
                     кассы, сертиф.
                     <br>
-                    <div class="header__info" href="tel:+79252003733">+7 925 200 37 33</div>
+                    <a class="header__info" href="tel:+79252003733">+7 925 200 37 33</a>
                   </div>
                 </div>
                 <div class="header__address">
@@ -105,9 +107,9 @@
               </div>
             </div>
           </div>
-          <a class="header__nav-item-desk" href="index.php#clients">клиенты</a>
-          <a class="header__nav-item-desk" href="index.php#callback">отзывы</a>
-          <a class="header__nav-item-desk" href="index.php#contacts">контакты</a>
+          <a class="header__nav-item-desk" href="#clients">клиенты</a>
+          <a class="header__nav-item-desk" href="#callback">отзывы</a>
+          <a class="header__nav-item-desk" href="#contacts">контакты</a>
           <a class="header__nav-item-desk" href="tel:+79031912616">+7 903 191 26 16</a>
         </div>
       </div>
@@ -147,9 +149,9 @@
               Регистрируем ИП и ООО
             </a>
           </div>
-          <a class="header__nav-item" href="index.php#clients">клиенты</a>
-          <a class="header__nav-item" href="index.php#callback">отзывы</a>
-          <a class="header__nav-item" href="index.php#contacts">контакты</a>
+          <a class="header__nav-item" href="#clients">клиенты</a>
+          <a class="header__nav-item" href="#callback">отзывы</a>
+          <a class="header__nav-item" href="#contacts">контакты</a>
         </div>
       </div>
     </div>
@@ -169,7 +171,7 @@
           </div>
           <div class="main__rate">
             <div class="main__rate-title">
-              Гибкие тарифы, выбирите ваш вариант:
+              Гибкие тарифы, выберите ваш вариант:
             </div>
             <a href="#" class="main__rate-link">
               ООО – Общество с ограниченной ответственностью
@@ -177,6 +179,60 @@
             <a href="#" class="main__rate-link">
               ИП – Индивидуальный предприниматель
             </a>
+          </div>
+        </div>
+      </div>
+      <div class="big-form">
+        <div class="container">
+          <div class="big-form__inner">
+            <div class="big-form-title--p">
+              Оставить заявку
+            </div>
+            <div class="big-form-step--p">
+              Оставте свой номер и за один звонок мы рассчитаем тариф, который подойдёт именно вашему бизнесу
+            </div>
+            <div class="big-form-close" id="big-form-close-m">
+              <div class="big-form-close-line"></div>
+              <div class="big-form-close-line"></div>
+            </div>
+            <div class="title">Профессиональное бухгалтерское обслуживание предпринимателей и малого бизнеса</div>
+            <form action="" class="contacts__form form">
+              <div class="big-form-title">
+                Оставить заявку
+              </div>
+              <div class="big-form-step">
+                Оставте свой номер и за один звонок мы рассчитаем тариф, который подойдёт именно вашему бизнесу
+              </div>
+              <input type="text" id="phone-input" class="big-form-input" placeholder="Ваш телефон">
+              <div class="num__block">
+                <div class="num__block-item" data-num="1">1</div>
+                <div class="num__block-item" data-num="2">2</div>
+                <div class="num__block-item" data-num="3">3</div>
+                <div class="num__block-item" data-num="4">4</div>
+                <div class="num__block-item" data-num="5">5</div>
+                <div class="num__block-item" data-num="6">6</div>
+                <div class="num__block-item" data-num="7">7</div>
+                <div class="num__block-item" data-num="8">8</div>
+                <div class="num__block-item" data-num="9">9</div>
+                <div class="num__block-item" data-num="+">+</div>
+                <div class="num__block-item" data-num="0">0</div>
+                <div class="num__block-item">
+                  <img src="./images/ico-del.svg" alt="">
+                </div>
+              </div>
+              <div class="form-policy">
+                <input type="checkbox" id="policy">
+                <label for="policy">Принимаю условия</label>
+                <a href="./policy.php">политики конфиденциальности</a>
+              </div>
+              <div class="big-form-close" id="big-form-close-desk">
+                <div class="big-form-close-line"></div>
+                <div class="big-form-close-line"></div>
+              </div>
+              <a href="#" class="big-form-btn">
+                Рассчитать
+              </a>
+            </form>
           </div>
         </div>
       </div>
@@ -304,8 +360,7 @@
           </p>
         </div>
         <video id="myPlayer" preload="auto" src="./videos/Отзыв.mov" class="outsourcing__video bg video" data-setup='{}'
-          poster="./images/poster-1.svg">
-
+          poster="./images/poster-1.svg" >
         </video>
         <p class="outsourcing__subtitle">
           HELIOS заменит вам бухгалтера, юриста, кадровика, налогового консультанта и личного ассистента
@@ -614,7 +669,7 @@
             <div class="carier__text">
               Наша команда всегда рада новым специалистам, готовым развиваться вместе с нами и становиться еще лучше!
             </div>
-            <a class="services__item-btn" href="#">
+            <a class="services__item-btn" href="./vacancy.php">
               Вакансии
             </a>
           </div>
@@ -626,7 +681,7 @@
       <div class="container">
         <div class="title">Контакты</div>
         <div class="contacts__inner">
-          <form action="" class="contacts__form form">
+          <form action="" class="contacts__form form" id="contacts__form">
             <div class="contacts__form-item form-item">
               <div class="form-item-title">
                 Оставить заявку
@@ -678,7 +733,7 @@
                 Шаг:04<span>/04</span>
               </div>
               <div class="form-item-text">
-                Выбирите ваш вариант:
+                Выберите ваш вариант:
               </div>
               <div class="form-item-plan">
                 <input type="radio" id="radioButton1" name="plan">
@@ -841,8 +896,8 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.min.js"></script>
   <script src="js/lazy-loading.js"></script>
+  <script src="js/main.min.js"></script>
 
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -895,7 +950,7 @@
     $(".recommendations__inner").on('afterChange', function (event, slick, currentSlide) {
       $("#cp").text(currentSlide + 01);
     });
-    $(".contacts__form").slick({
+    $("#contacts__form").slick({
       infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -907,12 +962,25 @@
     loop: true,
     loopCount: 10,
   });
-  if ($('.recall__item-text').height() > parseFloat($('.recall__item-text').css('line-height')) * 12){
+  if ($('.recall__item-text').height() > parseFloat($('.recall__item-text').css('line-height')) * 12) {
     $('.recall__item-text').height(parseFloat($('.recall__item-text').css('line-height')) * 12)
     $('.read-more').css("display", "block");
-  }
-  else{
+  } else {
     $('.read-more').css("display", "none");
+  }
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      const blockID = anchor.getAttribute('href').substr(1)
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
   }
 
   //Код jQuery, установливающий маску для ввода телефона элементу input
