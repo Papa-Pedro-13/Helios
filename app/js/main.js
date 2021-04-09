@@ -1,19 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const anchors = document.querySelectorAll('a[href*="#"]')
+  // const anchors = document.querySelectorAll('a[href*="#"]')
 
-  for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault()
+  // for (let anchor of anchors) {
+  //   anchor.addEventListener('click', function (e) {
+  //     e.preventDefault()
 
-      const blockID = anchor.getAttribute('href').substr(1)
+  //     const blockID = anchor.getAttribute('href').substr(1)
 
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-    })
-  }
+  //     document.getElementById(blockID).scrollIntoView({
+  //       behavior: 'smooth',
+  //       block: 'start'
+  //     })
+  //   })
+  // }
+
+
+
+  // const screenWidth = window.screen.width
+  // if (screenWidth <= 768) {
+  //   alert(screenWidth)
+  //   let inp = document.querySelector('.big-form-input');
+  //   inp.setAttribute('disabled', 'disabled');
+  // };
 
 
   document.addEventListener('click', (e) => {
@@ -104,10 +113,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     let fr_btn = document.querySelectorAll('.main__rate-link');
-    for(i = 0; i<2; i++){
-      if(e.target == fr_btn){
+    for (i = 0; i < 2; i++) {
+      if (e.target == fr_btn[i]) {
         let maxForm = document.querySelector('.big-form');
         maxForm.classList.add('big-form--active');
+      }
+    }
+    let fr_btn_c = document.querySelectorAll('.big-form-close');
+    for (i = 0; i < 2; i++) {
+      if (e.target == fr_btn_c[i]) {
+        let maxForm = document.querySelector('.big-form');
+        maxForm.classList.remove('big-form--active');
       }
     }
   })
