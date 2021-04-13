@@ -49,7 +49,7 @@
     </div>
   </div>
 </section>
-<section class="claim claim-n">
+<section class="claim">
   <div class="container">
     <div class="claim__inner">
       <div class="claim__title">Оставьте заявку и мы поможем выбрать Вам оптимальный сервис!</div>
