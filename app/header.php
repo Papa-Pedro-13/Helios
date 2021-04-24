@@ -20,12 +20,9 @@ if ($_SERVER['REQUEST_URI']=="/")
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <a class="logo" href="http://helios.na4u.ru/">
-                <picture>
-                    <source srcset="./images/webp/logo.webp" type="image/webp">
-                    <img src="./images/logo.svg" alt="Гелиос">
-                </picture>
-            </a>
+        <a class="logo" href="http://helios.na4u.ru/">
+          <img src="./images/logo.svg" alt="Гелиос" class="lazy">
+        </a>
             <div class="header__btn">
                 <span class="header__btn-line"></span>
                 <span class="header__btn-line"></span>

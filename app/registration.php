@@ -2,10 +2,10 @@
 <section class="registration">
   <div class="container">
     <div class="registration__inner">
-      <div class="title">
+      <h1 class="title">
         Регистрация ИП, ООО
         под ключ
-      </div>
+      </h1>
       <div class="bookkeeping__text">
         За 3 дня в Москве с онлайн подачей через ЭЦП с доставкой Вам документов.
       </div>
@@ -66,14 +66,14 @@
       <div class="claim__title">
         Получите бесплатную консультацию по регистрации Вашего бизнеса прямо сейчас
       </div>
-      <div class="claim-pos">
+      <form action="https://helios1c.ru/mail.php/" method="POST" class="claim-pos">
         <div class="claim__title-m">Оставить заявку</div>
-        <input type="text" class="claim__input" placeholder="Номер телефона">
+        <input type="text" class="claim__input" placeholder="Номер телефона" name="tel">
         <a class="claim__btn">
           ОСТАВИТЬ ЗАЯВКУ
         </a>
         <div class="claim__btn-m"></div>
-      </div>
+      </form>
     </div>
 </section>
 <? require_once "footer.php" ?>

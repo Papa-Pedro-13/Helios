@@ -2,8 +2,8 @@
 <section class="certificate">
   <div class="container">
     <div class="certificate__inner">
-      <div class="title">Поможем сертифицировать продукцию, оформить декларацию соответствия онлайн по всей России
-      </div>
+      <h1 class="title">Поможем сертифицировать продукцию, оформить декларацию соответствия онлайн по всей России
+      </h1>
       <ul class="bookkeeping-list">
         <div class="list-headline">Преимущества сервиса:</div>
         <div class="list__items">
@@ -85,14 +85,14 @@
       <div class="claim__title">
         Выберете необходимую Вам услугу и мы подробно проконсультируем Вас о стоимости и сроках ее получения
       </div>
-      <div class="claim-pos">
+      <form action="https://helios1c.ru/mail.php/" method="POST" class="claim-pos">
         <div class="claim__title-m">Оставить заявку</div>
-        <input type="text" class="claim__input" placeholder="Номер телефона">
+        <input type="text" class="claim__input" placeholder="Номер телефона" name="tel">
         <a class="claim__btn">
           ОСТАВИТЬ ЗАЯВКУ
         </a>
         <div class="claim__btn-m"></div>
-      </div>
+      </form>
     </div>
 </section>
 <? require_once "footer.php" ?>

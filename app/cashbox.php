@@ -2,7 +2,7 @@
 <section class="cashbox">
   <div class="container">
     <div class="cashbox__inner">
-      <div class="title">ОФД кассы</div>
+      <h1 class="title">ОФД кассы</h1>
       <ul class="bookkeeping-list">
         <div class="list-headline">Коды активации это самый быстрый, дешевый и надежный способ продления ОФД для Вашей
           контрольно- кассовой техники!</div>
@@ -108,14 +108,14 @@
     <div class="claim__inner">
       <div class="claim__title">Получите 100% работоспособные коды от официального дистрибьютора операторов фискальных
         данных</div>
-      <div class="claim-pos">
+      <form action="https://helios1c.ru/mail.php/" method="POST" class="claim-pos">
         <div class="claim__title-m">Оставить заявку</div>
-        <input type="text" class="claim__input" placeholder="Номер телефона">
+        <input type="text" class="claim__input" placeholder="Номер телефона" name="tel">
         <a class="claim__btn">
           ОСТАВИТЬ ЗАЯВКУ
         </a>
         <div class="claim__btn-m"></div>
-      </div>
+      </form>
     </div>
 </section>
 <? require_once "footer.php" ?>

@@ -2,7 +2,7 @@
 <section class="signature">
   <div class="container">
     <div class="signature__inner">
-      <div class="title">Электронная подпись для любых задач</div>
+      <h1 class="title">Электронная подпись для любых задач</h1>
       <ul class="bookkeeping__text-list">
         <li class="bookkeeping__text-item">— Подключение за 30 минут</li>
         <li class="bookkeeping__text-item">— Для бизнеса любого формата</li>
@@ -53,14 +53,14 @@
       <div class="claim__title">
         Остались вопросы по ЭЦП? Наш специалист позвонит вам в течение 10 минут и проконсультирует бесплатно
       </div>
-      <div class="claim-pos">
+      <form action="https://helios1c.ru/mail.php/" method="POST" class="claim-pos">
         <div class="claim__title-m">Оставить заявку</div>
-        <input type="text" class="claim__input" placeholder="Номер телефона">
+        <input type="text" class="claim__input" placeholder="Номер телефона" name="tel">
         <a class="claim__btn">
           ОСТАВИТЬ ЗАЯВКУ
         </a>
         <div class="claim__btn-m"></div>
-      </div>
+      </form>
     </div>
 </section>
 <? require_once "footer.php" ?>

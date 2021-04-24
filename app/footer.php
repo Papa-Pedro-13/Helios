@@ -73,4 +73,6 @@
   </div>
 </footer>
 <script src="js/lazy-loading.js"></script>
+<script type="text/javascript" src="validator.min.js"></script>
+
 <script src="js/main.min.js"></script>

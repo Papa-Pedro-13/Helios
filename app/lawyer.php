@@ -2,7 +2,7 @@
 <section class="lawyer">
   <div class="container">
     <div class="lawyer__inner">
-      <div class="title">Юридические услуги</div>
+      <h1 class="title">Юридические услуги</h1>
       <ul class="bookkeeping-list">
         <div class="list__items">
           <li class="list-item">
@@ -66,14 +66,14 @@
       <div class="claim__title">
         Давайте обсудим Вашу ситуацию прямо сейчас
       </div>
-      <div class="claim-pos">
+      <form action="https://helios1c.ru/mail.php/" method="POST" class="claim-pos">
         <div class="claim__title-m">Оставить заявку</div>
-        <input type="text" class="claim__input" placeholder="Номер телефона">
+        <input type="text" class="claim__input" placeholder="Номер телефона" name="tel">
         <a class="claim__btn">
           ОСТАВИТЬ ЗАЯВКУ
         </a>
         <div class="claim__btn-m"></div>
-      </div>
+      </form>
     </div>
 </section>
 <? require_once "footer.php" ?>

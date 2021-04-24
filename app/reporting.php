@@ -2,7 +2,7 @@
 <section class="reporting">
   <div class="container">
     <div class="reporting__inner">
-      <div class="title">1С:Отчетность</div>
+      <h1 class="title">1С:Отчетность</h1>
       <div class="bookkeeping__text">
         Сдача отчетности во все госорганы через интернет без ошибок точно в срок без привязки к вашему офису.
         <ul class="bookkeeping__text-list">
@@ -53,14 +53,14 @@
       <div class="claim__title">
         Поможем выбрать выгодный тариф 1С Отчётности прямо сейчас!
       </div>
-      <div class="claim-pos">
+      <form action="https://helios1c.ru/mail.php/" method="POST" class="claim-pos">
         <div class="claim__title-m">Оставить заявку</div>
-        <input type="text" class="claim__input" placeholder="Номер телефона">
+        <input type="text" class="claim__input" placeholder="Номер телефона" name="tel">
         <a class="claim__btn">
           ОСТАВИТЬ ЗАЯВКУ
         </a>
         <div class="claim__btn-m"></div>
-      </div>
+      </form>
     </div>
 </section>
 <? require_once "footer.php" ?>

@@ -3,9 +3,9 @@
   <div class="container">
     <div class="vacancy__inner">
       <div class="title">
-        <div class="small-text">
+        <h1 class="small-text">
           Вакансия
-        </div>
+        </h1>
         Бухгалтер
       </div>
       <div class="vacancy__headline">
@@ -90,14 +90,14 @@
       <div class="claim__title">
         Выберете необходимую Вам услугу и мы подробно проконсультируем Вас о стоимости и сроках ее получения
       </div>
-      <div class="claim-pos">
+      <form action="https://helios1c.ru/mail.php/" method="POST" class="claim-pos">
         <div class="claim__title-m">Оставить заявку</div>
-        <input type="text" class="claim__input" placeholder="Номер телефона">
+        <input type="text" class="claim__input" placeholder="Номер телефона" name="tel">
         <a class="claim__btn">
           ОСТАВИТЬ ЗАЯВКУ
         </a>
         <div class="claim__btn-m"></div>
-      </div>
+      </form>
     </div>
 </section>
 <? require_once "footer.php" ?>
