@@ -1,7 +1,7 @@
 html,
 body {
 	animation: fade 1s linear;
-	font-family: 'Century Gothic';
+	font-family: "Century Gothic";
 	font-weight: 400;
 	font-size: 13px;
 	font-style: normal;
@@ -21,24 +21,21 @@ body {
 	flex: 0 0 auto;
 }
 
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
 	height: 100%;
 	width: 100%;
 }
-@keyframes fade{
-	from{
+@keyframes fade {
+	from {
 		opacity: 0;
 	}
-	to{
+	to {
 		opacity: 1;
 	}
 }
-
-
-
-
-
-
+h2{
+	font-weight: 400;
+}
