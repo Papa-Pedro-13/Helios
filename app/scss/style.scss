@@ -1,4 +1,7 @@
+@import "vars";
+@import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 @import "slick";
 @import "slick-theme";
@@ -90,7 +93,7 @@
   }
   &__nav {
     position: absolute;
-    top: -100%;
+    top: -150%;
     height: 700px;
     width: 100%;
     transition: all 0.3s ease 0.1s;
@@ -177,7 +180,7 @@
   background-color: #e9f3fd;
   margin-bottom: 150px;
   &__inner {
-    padding-top: 30px;
+    margin-top: 30px;
     height: inherit;
   }
   &__uppertitle {
@@ -206,7 +209,7 @@
 }
 .main__rate {
   position: absolute;
-  bottom: -130px;
+  bottom: -150px;
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -1047,6 +1050,8 @@ input {
     &:nth-child(2) {
       &::before {
         content: url(../images/phones-item-2.png);
+        border-radius: 50%;
+        background-color: #fff;
       }
     }
     &:nth-child(3) {
@@ -1122,6 +1127,7 @@ input {
   .header__nav {
     height: 500px;
   }
+
   .header__nav--auto {
     height: 700px;
   }
@@ -1373,13 +1379,6 @@ input {
   }
   .contacts__map img {
     height: 554px;
-  }
-}
-.contacts {
-  .slick-slide:nth-child(6) {
-    .form-item-title {
-      width: 100% !important;
-    }
   }
 }
 
@@ -1808,7 +1807,7 @@ label {
 }
 .header__nav-serv-desk {
   position: absolute;
-  top: -100%;
+  top: -150%;
   height: 800px;
   width: 100%;
   left: 0;
@@ -1821,6 +1820,11 @@ label {
   &--active {
     top: 100px;
     opacity: 1;
+  }
+}
+@media (max-height: 800px) {
+  .header__nav-serv-desk {
+    height: 500px;
   }
 }
 .bookkeeping {
