@@ -16,15 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // }
 
 
-
-  // const screenWidth = window.screen.width
-  // if (screenWidth <= 768) {
-  //   alert(screenWidth)
-  //   let inp = document.querySelector('.big-form-input');
-  //   inp.setAttribute('disabled', 'disabled');
-  // };
-
-
   document.addEventListener('click', (e) => {
     let h_btn = document.querySelector('.header__btn');
     let h_btn_l = document.querySelectorAll('.header__btn-line');
