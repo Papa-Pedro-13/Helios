@@ -38,7 +38,7 @@
           <div class="big-form-close-line"></div>
         </div>
         <h2 class="title">Профессиональное бухгалтерское обслуживание предпринимателей и малого бизнеса</h2>
-        <form action="https://helios1c.ru/mail.php/" method="POST" class="contacts__form form">
+        <form action="https://helios1c.ru/mail.php/" method="POST" class="contacts__form form" id="myForm">
           <div class="big-form-title">
             Оставить заявку
           </div>
@@ -71,9 +71,9 @@
             <div class="big-form-close-line"></div>
             <div class="big-form-close-line"></div>
           </div>
-          <a href="#" class="big-form-btn">
+          <button type="submit" class="big-form-btn">
             Рассчитать
-          </a>
+          </button>
         </form>
       </div>
     </div>
@@ -201,7 +201,7 @@
         HELIOS заменит вам бухгалтера, юриста, кадровика, налогового консультанта и личного ассистента
       </p>
     </div>
-    <video id="myPlayer" preload="auto" src="./videos/review.mov" class="outsourcing__video bg video" data-setup='{}' poster="./images/poster-1.svg">
+    <video id="myPlayer" preload="auto" src="./videos/outsource.mp4" class="outsourcing__video bg video" data-setup='{}'>
 
     </video>
     <p class="outsourcing__subtitle">
@@ -464,7 +464,7 @@
         </div>
       </div>
       <div class="recommendations__item">
-        <video preload="auto" src="./videos/review.mov" class="recommendations__video bg video" data-setup='{}' poster="./images/poster-1.svg">
+        <video preload="auto" src="./videos/feedback-1.mp4" class="recommendations__video bg video" data-setup='{}'>
         </video>
         <div class="recommendations__item-desc">
           <div class="recommendations__item-text">
@@ -521,7 +521,7 @@
   <div class="container">
     <h2 class="title">Контакты</h2>
     <div class="contacts__inner">
-      <form action="https://helios1c.ru/mail.php/" method="POST" class="contacts__form form" id="contacts__form">
+      <form action="https://helios1c.ru/mail.php/" method="POST" class="contacts__form form" id="contacts__form" id="myForm-f">
         <div class="contacts__form-item form-item">
           <div class="form-item-title">
             Оставить заявку
@@ -594,7 +594,6 @@
             мы скоро свяжемся с вами!
           </div>
         </div>
-
       </form>
       <div class="contacts__phones">
         <a class="title" href="mailto:info@helios1c.ru">info@helios1c.ru</a>
@@ -605,7 +604,7 @@
             <a class="phones-item-link" href="tel:+79031912616">+7 903 191 26 16</a>
           </div>
           <div class="phones-item">
-            <div class="phones-item-headline">Александр</div>
+            <div class="phones-item-headline">Алексей</div>
             <div class="phones-item-name">продукты 1С</div>
             <a class="phones-item-link" href="tel:+79252003733">+7 925 200 37 33</a>
           </div>
@@ -676,14 +675,53 @@
 <? require_once "footer.php" ?>
 
 <script src=" https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 </body>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 <script type="text/javascript" src="./js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="./js/slick.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
 
+<script>
+  $(document).ready(function() {
+    $("#myForm").validate({
+      rules: {
+        email: {
+          required: "Поле обязательно для заполнения",
+          email: true
+        },
+        name: {
+          required: "Поле обязательно для заполнения",
+          minlength: 5
+        },
+        tel: {
+          required: "Поле обязательно для заполнения",
+          minlength: 11,
+        }
+      }
+    });
+    $("#myForm-f").validate({
+      rules: {
+        email: {
+          required: "Поле обязательно для заполнения",
+          email: true
+        },
+        name: {
+          required: "Поле обязательно для заполнения",
+          minlength: 5
+        },
+        tel: {
+          required: "Поле обязательно для заполнения",
+          minlength: 11,
+        }
+      }
+    });
+  });
+</script>
 
 <script>
   $(document).ready(function() {
@@ -731,6 +769,7 @@
       slidesToShow: 1,
       slidesToScroll: 1,
     });
+
   });
   var typed = new Typed('#typing', {
     strings: [" ", "отчётами / налогами / кадрами / взносами / 1С онлайн / первичкой"],
